@@ -23,6 +23,8 @@
 - **Git & GitHub**: Version control dan kolaborasi tim.
  
 ## 🚀 Cara Menjalankan Proyek
-
-1. *Clone* repositori ini ke komputer lokal:
- https://github.com/FransiscaClaudyna/TemanNugas
+1. Buka repository GitHub TemanNugas : https://github.com/FransiscaClaudyna/TemanNugas
+2. Klik Code → Download ZIP.
+3. Ekstrak file ZIP yang telah diunduh.
+4. Buka folder proyek menggunakan browser dengan membuka file login.html, atau gunakan VS Code dengan ekstensi Live Server.
+5. Gunakan menu navigasi untuk menjelajahi halaman Dashboard, Daftar Tugas, Jadwal, dan Pengingat.
