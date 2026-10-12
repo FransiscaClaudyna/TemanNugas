@@ -21,11 +21,8 @@
 - **CSS3**: Layout responsif (Flexbox & Grid) serta CSS Variables untuk tema Dark Mode.
 - **JavaScript (Vanilla)**: Logika interaktif, manipulasi DOM, dan penyimpanan data via `localStorage`.
 - **Git & GitHub**: Version control dan kolaborasi tim.
-
----
-
+ 
 ## 🚀 Cara Menjalankan Proyek
 
 1. *Clone* repositori ini ke komputer lokal:
-   ```bash
-   git clone [https://github.com/FransiscaClaudyna/TemanNugas.git](https://github.com/FransiscaClaudyna/TemanNugas.git)
+ https://github.com/FransiscaClaudyna/TemanNugas
