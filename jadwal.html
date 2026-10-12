@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Tugas | TemanNugas</title>
+  <title>Jadwal Harian | TemanNugas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,57 +20,84 @@
   </header>
 
   <main>
-    <section id="todo">
-      <h2>Daftar Tugas</h2>
-      <p>Catat tugasmu, pantau progresnya, dan selesaikan satu per satu.</p>
+    <section id="jadwal">
+      <h2>Jadwal Harian</h2>
+      <p>Susun kegiatanmu berdasarkan hari dan jam agar semuanya lebih teratur.</p>
       
-      <form id="form-tugas">
-        <input
-          type="text"
-          id="nama-tugas"
-          placeholder="Nama tugas"
-          required>
-        <input
-          type="text"
-          id="mata-kuliah"
-          placeholder="Nama mata kuliah"
-          required>
-        <input
-          type="date"
-          id="deadline-tugas"
-          required>
+      <div class="form-jadwal">
+        <h3>Tambah Kegiatan</h3>
 
-        <select id="prioritas-tugas" required>
-          <option value="">Pilih prioritas</option>
-          <option value="Tinggi">Tinggi</option>
-          <option value="Sedang">Sedang</option>
-          <option value="Rendah">Rendah</option>
-        </select>
+        <form id="form-jadwal">
+          <label for="nama-kegiatan">Nama Kegiatan</label>
+          <input
+            type="text"
+            id="nama-kegiatan"
+            placeholder="Contoh: Kuliah Pemrograman"
+            required>
 
-        <button type="submit">+ Tambah Tugas</button>
-      </form>
-      
-      <div class="filter-tugas">
-        <button type="button" data-filter="Semua">Semua</button>
-        <button type="button" data-filter="Tinggi">Tinggi</button>
-        <button type="button" data-filter="Sedang">Sedang</button>
-        <button type="button" data-filter="Rendah">Rendah</button>
+          <label for="hari-kegiatan">Hari</label>
+          <select id="hari-kegiatan" required>
+            <option value="">Pilih hari</option>
+            <option>Senin</option>
+            <option>Selasa</option>
+            <option>Rabu</option>
+            <option>Kamis</option>
+            <option>Jumat</option>
+            <option>Sabtu</option>
+            <option>Minggu</option>
+          </select>
+
+          <div class="waktu-jadwal">
+            <div>
+              <label for="jam-mulai">Jam Mulai</label>
+              <input
+                type="time"
+                id="jam-mulai"
+                required>
+            </div>
+
+            <div>
+              <label for="jam-selesai">Jam Selesai</label>
+              <input
+                type="time"
+                id="jam-selesai"
+                required>
+            </div>
+          </div>
+
+          <label for="catatan-kegiatan">
+            Catatan (opsional)
+          </label>
+
+          <textarea
+            id="catatan-kegiatan"
+            placeholder="Tambahkan detail kegiatan"
+          ></textarea>
+
+          <button type="submit"> + Tambahkan Kegiatan </button>
+        </form>
       </div>
-      
-      <div id="list-tugas">
-        <p>Belum ada tugas. Yuk, segera tambahkan tugasmu!</p>
+      <div class="daftar-jadwal">
+        <h3>Jadwal Mingguan</h3>
+
+        <div id="list-jadwal">
+          <p> Belum ada kegiatan. Tambahkan jadwal pertamamu! </p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <h3>TemanNugas</h3>
+
     <p>
       &copy; 2026 TemanNugas. Atur jadwal, kelola tugas,
       dan raih targetmu satu per satu untuk hari yang
       lebih terencana dan bermakna.
     </p>
   </footer>
+
   <script src="script.js"></script>
+
 </body>
 </html>
