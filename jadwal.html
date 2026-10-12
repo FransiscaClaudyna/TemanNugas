@@ -1,103 +1,125 @@
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jadwal Harian | TemanNugas</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Harian | TemanNugas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>TemanNugas</h1>
 
-    <nav>
-      <a href="index.html">Dashboard</a>
-      <a href="tugas.html">Daftar Tugas</a>
-      <a href="jadwal.html">Jadwal</a>
-      <a href="pengingat.html">🔔</a>
-    </nav>
-  </header>
+    <header>
+        <h1>TemanNugas</h1>
 
-  <main>
-    <section id="jadwal">
-      <h2>Jadwal Harian</h2>
-      <p>Susun kegiatanmu berdasarkan hari dan jam agar semuanya lebih teratur.</p>
-      
-      <div class="form-jadwal">
-        <h3>Tambah Kegiatan</h3>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="tugas.html">Daftar Tugas</a>
+            <a href="jadwal.html">Jadwal</a>
+            <a href="pengingat.html">🔔</a>
+        </nav>
 
-        <form id="form-jadwal">
-          <label for="nama-kegiatan">Nama Kegiatan</label>
-          <input
-            type="text"
-            id="nama-kegiatan"
-            placeholder="Contoh: Kuliah Pemrograman"
-            required>
+        <a href="login.html">Logout</a>
+    </header>
 
-          <label for="hari-kegiatan">Hari</label>
-          <select id="hari-kegiatan" required>
-            <option value="">Pilih hari</option>
-            <option>Senin</option>
-            <option>Selasa</option>
-            <option>Rabu</option>
-            <option>Kamis</option>
-            <option>Jumat</option>
-            <option>Sabtu</option>
-            <option>Minggu</option>
-          </select>
+    <main>
+        <section id="jadwal">
 
-          <div class="waktu-jadwal">
-            <div>
-              <label for="jam-mulai">Jam Mulai</label>
-              <input
-                type="time"
-                id="jam-mulai"
-                required>
+            <h2>Jadwal Harian</h2>
+
+            <p>
+                Susun kegiatanmu berdasarkan hari dan jam
+                agar semuanya lebih teratur.
+            </p>
+
+            <div class="form-jadwal">
+                <h3>Tambah Kegiatan</h3>
+
+                <form id="form-jadwal">
+
+                    <label for="nama-kegiatan">Nama Kegiatan</label>
+                    <input
+                        type="text"
+                        id="nama-kegiatan"
+                        placeholder="Contoh: Kuliah Pemrograman"
+                        required
+                    >
+
+                    <label for="hari-kegiatan">Hari</label>
+                    <select id="hari-kegiatan" required>
+                        <option value="">Pilih hari</option>
+                        <option>Senin</option>
+                        <option>Selasa</option>
+                        <option>Rabu</option>
+                        <option>Kamis</option>
+                        <option>Jumat</option>
+                        <option>Sabtu</option>
+                        <option>Minggu</option>
+                    </select>
+
+                    <div class="waktu-jadwal">
+                        <div>
+                            <label for="jam-mulai">Jam Mulai</label>
+                            <input
+                                type="time"
+                                id="jam-mulai"
+                                required
+                            >
+                        </div>
+
+                        <div>
+                            <label for="jam-selesai">Jam Selesai</label>
+                            <input
+                                type="time"
+                                id="jam-selesai"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <label for="catatan-kegiatan">
+                        Catatan (opsional)
+                    </label>
+
+                    <textarea
+                        id="catatan-kegiatan"
+                        placeholder="Tambahkan detail kegiatan"
+                    ></textarea>
+
+                    <button type="submit">
+                        + Tambahkan Kegiatan
+                    </button>
+
+                </form>
             </div>
 
-            <div>
-              <label for="jam-selesai">Jam Selesai</label>
-              <input
-                type="time"
-                id="jam-selesai"
-                required>
+            <div class="daftar-jadwal">
+                <h3>Jadwal Mingguan</h3>
+
+                <div id="list-jadwal">
+                    <p>
+                        Belum ada kegiatan.
+                        Tambahkan jadwal pertamamu!
+                    </p>
+                </div>
             </div>
-          </div>
 
-          <label for="catatan-kegiatan">
-            Catatan (opsional)
-          </label>
+        </section>
+    </main>
 
-          <textarea
-            id="catatan-kegiatan"
-            placeholder="Tambahkan detail kegiatan"
-          ></textarea>
+    <footer>
+        <h3>TemanNugas</h3>
 
-          <button type="submit"> + Tambahkan Kegiatan </button>
-        </form>
-      </div>
-      <div class="daftar-jadwal">
-        <h3>Jadwal Mingguan</h3>
+        <p>
+            &copy; 2026 TemanNugas. Atur jadwal, kelola tugas,
+            dan raih targetmu satu per satu untuk hari yang
+            lebih terencana dan bermakna.
+        </p>
+    </footer>
 
-        <div id="list-jadwal">
-          <p> Belum ada kegiatan. Tambahkan jadwal pertamamu! </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <h3>TemanNugas</h3>
-
-    <p>
-      &copy; 2026 TemanNugas. Atur jadwal, kelola tugas,
-      dan raih targetmu satu per satu untuk hari yang
-      lebih terencana dan bermakna.
-    </p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
+```
