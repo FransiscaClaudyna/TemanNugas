@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | TemanNugas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | TemanNugas</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header>
+    <h1>TemanNugas</h1>
 
-    <header>
-        <h1>TemanNugas</h1>
+    <nav>
+  <a href="index.html">Dashboard</a>
+  <a href="tugas.html">Daftar Tugas</a>
+  <a href="jadwal.html">Jadwal</a>
+  <a href="pengingat.html">Pengingat</a>
+  <button type="button" id="themeToggle" class="theme-toggle-btn">🌙 Dark Mode</button>
+  <a href="login.html" id="logoutBtn" class="logout-btn">Logout</a>
+</nav>
+  </header>
+  
+  <main>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <h1>Selamat Datang di TemanNugas</h1>
+      <p>Tugas banyak? Yuk, atur satu per satu.</p>
+      <p>Atur jadwal, tentukan prioritas, dan jalani hari dengan lebih terencana.</p>
 
-        <nav>
-            <a href="index.html">Dashboard</a>
-            <a href="tugas.html">Daftar Tugas</a>
-            <a href="jadwal.html">Jadwal</a>
-            <a href="pengingat.html">🔔</a>
-        </nav>
+      <div class="ringkasan">
+        <div class="kartu-ringkasan">
+          <h3>Total Tugas</h3>
+          <p>0 tugas</p>
+        </div>
 
-        <a href="login.html">Logout</a>
-    </header>
+        <div class="kartu-ringkasan">
+          <h3>Tugas Selesai</h3>
+          <p>0 tugas</p>
+        </div>
 
-    <main>
-        <section id="dashboard">
-            <h2>Dashboard</h2>
+        <div class="kartu-ringkasan">
+          <h3>Tenggat Terdekat</h3>
+          <p>Belum ada tenggat</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            <h1>Selamat Datang di TemanNugas</h1>
+  <footer>
+    <h3>TemanNugas</h3>
+    <p>
+      &copy; 2026 TemanNugas. Atur jadwal, kelola tugas,
+      dan raih targetmu satu per satu untuk hari yang
+      lebih terencana dan bermakna.
+    </p>
+  </footer>
 
-            <p>Tugas banyak? Yuk, atur satu per satu.</p>
-            <p>
-                Atur jadwal, tentukan prioritas, dan jalani hari
-                dengan lebih terencana.
-            </p>
-
-            <div class="ringkasan">
-                <div class="kartu-ringkasan">
-                    <h3>Total Tugas</h3>
-                    <p>0 tugas</p>
-                </div>
-
-                <div class="kartu-ringkasan">
-                    <h3>Tugas Selesai</h3>
-                    <p>0 tugas</p>
-                </div>
-
-                <div class="kartu-ringkasan">
-                    <h3>Tenggat Terdekat</h3>
-                    <p>Belum ada tenggat</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <h3>TemanNugas</h3>
-        <p>&copy; 2026 TemanNugas.</p>
-        <p>
-            Atur jadwal, kelola tugas, dan raih targetmu satu per satu
-            untuk hari yang lebih terencana dan bermakna.
-        </p>
-    </footer>
-
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
