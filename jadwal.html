@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Tugas | TemanNugas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <header>
+    <h1>TemanNugas</h1>
+
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="tugas.html">Daftar Tugas</a>
+      <a href="jadwal.html">Jadwal</a>
+      <a href="pengingat.html">Pengingat</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="todo">
+      <h2>Daftar Tugas</h2>
+      <p>Catat tugasmu, pantau progresnya, dan selesaikan satu per satu.</p>
+      
+      <form id="form-tugas">
+        <input
+          type="text"
+          id="nama-tugas"
+          placeholder="Nama tugas"
+          required>
+        <input
+          type="text"
+          id="mata-kuliah"
+          placeholder="Nama mata kuliah"
+          required>
+        <input
+          type="date"
+          id="deadline-tugas"
+          required>
+
+        <select id="prioritas-tugas" required>
+          <option value="">Pilih prioritas</option>
+          <option value="Tinggi">Tinggi</option>
+          <option value="Sedang">Sedang</option>
+          <option value="Rendah">Rendah</option>
+        </select>
+
+        <button type="submit">+ Tambah Tugas</button>
+      </form>
+      
+      <div class="filter-tugas">
+        <button type="button" data-filter="Semua">Semua</button>
+        <button type="button" data-filter="Tinggi">Tinggi</button>
+        <button type="button" data-filter="Sedang">Sedang</button>
+        <button type="button" data-filter="Rendah">Rendah</button>
+      </div>
+      
+      <div id="list-tugas">
+        <p>Belum ada tugas. Yuk, segera tambahkan tugasmu!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>TemanNugas</h3>
+    <p>
+      &copy; 2026 TemanNugas. Atur jadwal, kelola tugas,
+      dan raih targetmu satu per satu untuk hari yang
+      lebih terencana dan bermakna.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
