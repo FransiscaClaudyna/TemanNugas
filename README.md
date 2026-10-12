@@ -1,10 +1,8 @@
 # 📚 TemanNugas
 
-**TemanNugas** adalah aplikasi web manajemen tugas dan jadwal kuliah berbasis HTML5, CSS, dan JavaScript yang dirancang untuk membantu mahasiswa mengelola tugas, prioritas, serta pengingat tenggat secara terencana.
+**TemanNugas** adalah Website pengelola tugas dan jadwal mahasiswa untuk membantu mengatur prioritas, mengingat deadline, dan merencanakan aktivitas akademik maupun organisasi berbasis HTML5, CSS, dan JavaScript.
 
----
-
-## 🌟 Fitur Utama
+ 🌟 Fitur Utama
 
 - 🔐 **Login Gate**: Halaman autentikasi awal sebelum masuk ke Dashboard.
 - 📊 **Dashboard**: Ringkasan statistik total tugas, tugas yang telah selesai, dan tenggat terdekat.
