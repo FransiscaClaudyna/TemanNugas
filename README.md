@@ -1,6 +1,6 @@
 # 📚 TemanNugas
 
-**TemanNugas** adalah aplikasi web manajemen tugas dan jadwal kuliah berbasis HTML5, CSS3, dan JavaScript Vanilla yang dirancang untuk membantu mahasiswa mengelola tugas, prioritas, serta pengingat tenggat secara terencana.
+**TemanNugas** adalah aplikasi web manajemen tugas dan jadwal kuliah berbasis HTML5, CSS, dan JavaScript yang dirancang untuk membantu mahasiswa mengelola tugas, prioritas, serta pengingat tenggat secara terencana.
 
 ---
 
@@ -17,10 +17,10 @@
 
 ## 🛠️ Teknologi yang Digunakan
 
-- **HTML5**: Struktur halaman web multi-page (`login.html`, `index.html`, `tugas.html`, `jadwal.html`, `pengingat.html`).
-- **CSS3**: Layout responsif (Flexbox & Grid) serta CSS Variables untuk tema Dark Mode.
-- **JavaScript (Vanilla)**: Logika interaktif, manipulasi DOM, dan penyimpanan data via `localStorage`.
-- **Git & GitHub**: Version control dan kolaborasi tim.
+- HTML5: Struktur halaman web multi-page (`login.html`, `index.html`, `tugas.html`, `jadwal.html`, `pengingat.html`).
+- CSS: Layout responsif (Flexbox & Grid) serta CSS Variables untuk tema Dark Mode.
+- JavaScript: Logika interaktif, manipulasi DOM, dan penyimpanan data via `localStorage`.
+- Git & GitHub: Version control dan kolaborasi tim.
  
 ## 🚀 Cara Menjalankan Proyek
 1. Buka repository GitHub TemanNugas : https://github.com/FransiscaClaudyna/TemanNugas
